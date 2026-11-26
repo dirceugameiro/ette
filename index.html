@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- ✏️ NOME DA MARCA: o nome "Laçada" é uma proposta. Para trocar, edite CONFIG.brand no <script> no fim do arquivo
+     e também o <title> e as metatags abaixo (SEO precisa do texto fixo aqui). -->
+<title>Universo dos nós | Amigurumis e peças feitas à mão</title>
+<meta name="description" content="Amigurumis, cestas de frutas e outras peças feitas à mão pela minha avó. Escolha uma peça e converse pelo WhatsApp.">
+<meta property="og:title" content="Laçada | Amigurumis e peças feitas à mão">
+<meta property="og:description" content="Peças feitas à mão, uma a uma. Consulte e encomende pelo WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<a class="skip" href="#catalogo">Ir para o catálogo</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="bow" viewBox="0 0 48 32"><path d="M24 16C16 3 3 1 2 10c-1 8 13 10 22 6zM24 16C32 3 45 1 46 10c1 8-13 10-22 6z" fill="currentColor"/><path d="M22 19l-6 11M26 19l6 11" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><circle cx="24" cy="16" r="4.5" fill="currentColor" stroke="var(--bg)" stroke-width="2"/></symbol></svg>
+
+<header class="top">
+  <div class="bar">
+    <a class="brand" href="#inicio" aria-label="Início"><svg aria-hidden="true"><use href="#bow"/></svg><span data-brand>Laçada</span></a>
+    <nav aria-label="Principal"><ul>
+      <li><a href="#inicio">Início</a></li><li><a href="#historia">Nossa história</a></li>
+      <li><a href="#catalogo">Catálogo</a></li><li><a href="#personalizados">Personalizados</a></li><li><a href="#contato">Contato</a></li>
+    </ul></nav>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ativar tema escuro" aria-pressed="false">☾</button>
+      <a class="btn wa" data-wa="Olá! Vim pelo site e gostaria de conversar." href="#contato">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="hero" style="padding-top:36px">
+  <div class="wrap">
+    <figure class="hero-photo">
+      <!-- ✏️ FOTO DO HERO: troque em IMGS.urso (no <script>). Ideal: foto vertical ou quadrada, luz natural. -->
+      <img data-img="urso" width="870" height="863" fetchpriority="high" alt="Urso de crochê caramelo com gravata-borboleta de bolinhas, segurado pelas mãos da artesã sobre uma renda branca">
+      <figcaption>Amigo Urso, 29 cm, feito à mão.</figcaption>
+    </figure>
+    <div class="hero-text">
+      <!-- ✏️ TEXTO DO HERO: frase e apresentação são rascunhos. Reescreva com a voz da família. -->
+      <h1>Cada peça sai de casa com um detalhe.</h1>
+      <svg class="thread" viewBox="0 0 340 34" aria-hidden="true"><path d="M2 20C40 2 60 34 100 18S160 4 190 20s60 14 90-4 40-8 58 0"/></svg>
+      <p class="lead">Amigurumis, cestas de frutas e outras miudezas feitas à mão pela minha avó, uma de cada vez. Uma gravata de bolinhas, uma fita, um laço: sempre tem um detalhe.</p>
+      <div class="btns">
+        <a class="btn" href="#catalogo">Conheça nossas criações</a>
+        <a class="btn alt" href="#historia">Nossa história</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="zig" aria-hidden="true"></div>
+
+<section id="catalogo" class="paper">
+  <div class="wrap">
+    <h2>Nossas criações</h2>
+    <p>Escolha uma peça e toque em “Consultar”. A conversa abre no WhatsApp já com o nome dela na mensagem.</p>
+    <!-- ✏️ AVISO DE EXEMPLO: apague este bloco quando todas as peças forem reais. -->
+    <div class="notice" id="demoNotice">Algumas peças abaixo estão marcadas como <strong>Exemplo</strong>: são ilustrativas, sem preço confirmado.</div>
+    <div class="filters" id="filters" role="group" aria-label="Filtrar por categoria"></div>
+    <div class="grid" id="grid" aria-live="polite" aria-busy="true"><div class="skel">Carregando as peças…</div></div>
+  </div>
+</section>
+
+<section id="historia" class="story">
+  <div class="wrap">
+    <figure>
+      <!-- ✏️ FOTO DA ARTESÃ: troque IMGS.artesa. Peça autorização da sua avó para publicar a imagem dela. -->
+      <img class="big" data-img="artesa" loading="lazy" width="700" height="700" alt="A artesã ajeitando com cuidado um porquinho de crochê rosa, com uma cortina de renda ao fundo">
+      <div class="slots">
+        <!-- ✏️ ESPAÇOS PARA FOTOS: substitua cada .slot por <img> quando tiver as fotos. -->
+        <div class="slot">Foto futura: as mãos trabalhando o crochê.</div>
+        <div class="slot">Foto futura: o cantinho onde as peças nascem.</div>
+      </div>
+    </figure>
+    <div>
+      <h2>Feito pelas mãos da minha avó</h2>
+      <!-- ✏️ HISTÓRIA: texto-base só com o que as fotos mostram. Conte aqui a história real, com as palavras dela. -->
+      <p>Todas as peças daqui passam pelas mãos dela. Cada amigurumi é feito ponto a ponto, e cada um ganha o seu acabamento: uma gravata de bolinhas, uma fita, uma renda, um laço.</p>
+      <p>Por ser feito à mão, nenhum bichinho é igual ao outro. O rostinho, o tom do fio e o jeito do laço mudam de peça para peça.</p>
+      <p class="todo"><strong>Falta contar:</strong> como o trabalho começou, há quanto tempo ela faz peças e o que mais gosta de criar. Escreva em primeira pessoa e troque este bloco.</p>
+    </div>
+  </div>
+</section>
+
+<section id="personalizados" class="custom">
+  <div class="wrap">
+    <h2>Quer uma peça só sua?</h2>
+    <p>Conte a ideia e ela vira amigurumi. Funciona assim:</p>
+    <!-- ✏️ ETAPAS: ajuste o texto conforme a rotina real de encomendas. -->
+    <ol class="steps">
+      <li><strong>Você conta a ideia</strong>Pode ser um bicho, um personagem ou um presente.</li>
+      <li><strong>Conversamos</strong>Tamanho, cores e detalhes, com calma.</li>
+      <li><strong>Você recebe prazo e valor</strong>Tudo combinado antes de começar.</li>
+      <li><strong>Você confirma</strong>Só então a peça entra na agulha.</li>
+    </ol>
+    <a class="btn" data-wa="Olá! Gostaria de encomendar um amigurumi personalizado. Minha ideia é:" href="#contato">Começar conversa no WhatsApp</a>
+    <p style="margin:18px 0 0;font-size:1rem">Não há carrinho nem pagamento no site. Tudo é combinado pelo WhatsApp.</p>
+  </div>
+</section>
+
+<section id="depoimentos">
+  <div class="wrap">
+    <h2>Quem já recebeu uma peça</h2>
+    <div class="quotes" id="quotes"></div>
+  </div>
+</section>
+</main>
+
+<footer class="end" id="contato">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h2 data-brand>Laçada</h2>
+        <!-- ✏️ MENSAGEM FINAL: reescreva à vontade. -->
+        <p>Obrigada por passar por aqui. Se alguma peça te chamou, é só dizer o nome dela.</p>
+        <a class="btn wa" data-wa="Olá! Vim pelo site e gostaria de conversar." href="#contato">Falar no WhatsApp</a>
+      </div>
+      <div>
+        <h3>Onde nos encontrar</h3>
+        <ul>
+          <li><a data-wa="Olá! Vim pelo site e gostaria de conversar." href="#contato">WhatsApp</a></li>
+          <li><a id="ig" href="#contato" rel="noopener">Instagram</a></li>
+        </ul>
+        <div id="hours"></div>
+      </div>
+      <div>
+        <h3>No site</h3>
+        <ul><li><a href="#inicio">Início</a></li><li><a href="#historia">Nossa história</a></li><li><a href="#catalogo">Catálogo</a></li><li><a href="#personalizados">Personalizados</a></li></ul>
+      </div>
+    </div>
+    <small id="legal"></small>
+  </div>
+</footer>
+
+<script src="edits.js"></script>
+</body>
+</html>
